@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Индивидуальный вариант № 1: метатеги -->
+    <title>SoundWave Pro — беспроводные наушники | TechStore</title>
+    <meta name="description" content="SoundWave Pro — беспроводные наушники с чистым звучанием, активным шумоподавлением и автономной работой до 30 часов.">
+    <meta name="keywords" content="беспроводные наушники, SoundWave Pro, шумоподавление, аудио, интернет-магазин">
+
+    <!-- Open Graph для предварительного просмотра ссылки в социальных сетях -->
+    <meta property="og:type" content="product">
+    <meta property="og:title" content="SoundWave Pro — беспроводные наушники">
+    <meta property="og:description" content="Чистый звук, активное шумоподавление и до 30 часов музыки без подзарядки.">
+    <meta property="og:image" content="images/og-image.png">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="TechStore">
+
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="site-header__brand" href="#" aria-label="TechStore — главная страница">
+            <span class="site-header__brand-mark" aria-hidden="true">T</span>
+            <span>TechStore</span>
+        </a>
+        <nav class="site-nav" aria-label="Основная навигация">
+            <a class="site-nav__link site-nav__link--current" href="#" aria-current="page">Каталог</a>
+            <a class="site-nav__link" href="#product">Товар дня</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="catalog" aria-labelledby="page-title">
+            <p class="catalog__eyebrow">ТЕХНИКА ДЛЯ КАЖДОГО ДНЯ</p>
+            <h1 class="catalog__title" id="page-title">Выбор редакции</h1>
+            <p class="catalog__intro">Качественный звук и комфорт в каждой детали.</p>
+
+            <!-- Область объявлений для скринридера -->
+            <div class="visually-hidden" id="live-region" aria-live="polite" aria-atomic="true"></div>
+
+            <article class="product-card" id="product"
+                     aria-labelledby="product-title"
+                     aria-describedby="product-description">
+                <div class="product-card__visual">
+                    <!-- Изображение декоративное, поэтому не озвучивается скринридером -->
+                    <img class="product-card__image" src="images/product.svg"
+                         alt="" aria-hidden="true">
+                    <span class="product-card__badge" aria-hidden="true">Хит продаж</span>
+                    <span class="product-card__visual-caption" aria-hidden="true">SOUND / WAVE</span>
+                </div>
+
+                <div class="product-card__content">
+                    <div class="product-card__topline">
+                        <span class="product-card__category">Аудиотехника</span>
+                        <span class="product-card__rating" aria-label="Рейтинг 4,9 из 5">
+                            <span aria-hidden="true">★</span> 4,9
+                        </span>
+                    </div>
+
+                    <h2 class="product-card__title" id="product-title">Наушники SoundWave Pro</h2>
+                    <p class="product-card__description" id="product-description">
+                        Погрузитесь в любимую музыку. Чистое звучание, активное
+                        шумоподавление и удобная посадка для комфортного прослушивания.
+                    </p>
+
+                    <ul class="product-card__features" aria-label="Особенности товара">
+                        <li class="product-card__feature">До 30 часов работы</li>
+                        <li class="product-card__feature">Активное шумоподавление</li>
+                        <li class="product-card__feature">Беспроводное подключение</li>
+                    </ul>
+
+                    <div class="product-card__purchase">
+                        <p class="product-card__price" aria-label="Цена товара: 7 990 рублей">
+                            <span class="product-card__price-value">7 990 ₽</span>
+                            <span class="product-card__old-price" aria-label="Старая цена: 9 490 рублей">9 490 ₽</span>
+                        </p>
+                        <button class="button button--primary" id="add-to-cart"
+                                type="button"
+                                aria-label="Добавить наушники SoundWave Pro в корзину">
+                            <span class="button__icon" aria-hidden="true">＋</span>
+                            <span class="button__text">В корзину</span>
+                        </button>
+                    </div>
+
+                    <a class="product-card__link link" href="#product-details">
+                        Подробнее о товаре
+                    </a>
+                    <p class="product-card__details" id="product-details">
+                        Гарантия производителя — 12 месяцев. Доставка доступна при оформлении заказа.
+                    </p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 TechStore. Демонстрационный учебный проект.</p>
+    </footer>
+</body>
+</html>
